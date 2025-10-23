@@ -3,8 +3,8 @@ package br.com.movieapp.core.page
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import br.com.movieapp.core.domain.model.Movie
-import br.com.movieapp.feature.data.mapper.toMovie
-import br.com.movieapp.feature.domain.source.MoviePopularRemoteDataSource
+import br.com.movieapp.features.movie.data.mapper.toMovie
+import br.com.movieapp.features.movie.domain.source.MoviePopularRemoteDataSource
 import coil.network.HttpException
 import okio.IOException
 

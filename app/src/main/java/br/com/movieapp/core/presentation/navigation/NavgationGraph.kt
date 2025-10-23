@@ -5,8 +5,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import br.com.movieapp.feature.presentation.MoviePopularScreen
-import br.com.movieapp.feature.presentation.MoviePopularViewModel
+import br.com.movieapp.features.presentation.MoviePopularScreen
+import br.com.movieapp.features.presentation.MoviePopularViewModel
 
 @Composable
 fun NavigationGraph(navController: NavHostController) {
