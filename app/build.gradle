@@ -5,6 +5,10 @@ plugins {
     id 'kotlin-kapt'
 }
 
+def apiKeyPropertiesFile = rootProject.file("apikey.properties")
+def apiKeyProperties = new Properties()
+apiKeyProperties.load(new FileInputStream(apiKeyPropertiesFile))
+
 android {
     namespace 'br.com.movieapp'
     compileSdk 33
@@ -17,6 +21,12 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_KEY", "\"${apiKeyProperties['API_KEY'] ?: ""}\""
+        buildConfigField "String", "BASE_URL", "\"${apiKeyProperties['BASE_URL'] ?: ""}\""
+        buildConfigField "String", "BASE_IMAGE_URL", "\"${apiKeyProperties['BASE_IMAGE_URL'] ?: ""}\""
+
+
         vectorDrawables {
             useSupportLibrary true
         }
@@ -29,11 +39,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = "17"
     }
     buildFeatures {
         compose true
@@ -46,6 +56,10 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
