@@ -14,11 +14,11 @@ class MovieSearchRepositoryImpl @Inject constructor(
 ) : MovieSearchRepository {
     override fun getSearchMovies(
         query: String,
-        paging: PagingConfig
+        pagingConfig: PagingConfig
     ): Flow<PagingData<MovieSearch>> {
 
         return Pager(
-            config = paging,
+            config = pagingConfig,
             pagingSourceFactory = { remoteDataSource.getSearchMoviePagingSource(query) }
         ).flow
     }

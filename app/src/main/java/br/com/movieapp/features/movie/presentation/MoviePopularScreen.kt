@@ -7,8 +7,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.paging.compose.collectAsLazyPagingItems
 import br.com.movieapp.R
-import br.com.movieapp.features.presentation.components.MovieContent
-import br.com.movieapp.features.presentation.state.MoviePopularState
+import br.com.movieapp.features.movie.presentation.components.MovieContent
+import br.com.movieapp.features.movie.presentation.state.MoviePopularState
 import br.com.movieapp.ui.theme.black
 import br.com.movieapp.ui.theme.white
 

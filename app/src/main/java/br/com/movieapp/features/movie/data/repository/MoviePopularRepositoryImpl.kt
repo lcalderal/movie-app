@@ -4,8 +4,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import br.com.movieapp.core.domain.model.Movie
-import br.com.movieapp.features.domain.repository.MoviePopularRepository
-import br.com.movieapp.features.domain.source.MoviePopularRemoteDataSource
+import br.com.movieapp.features.movie.domain.repository.MoviePopularRepository
+import br.com.movieapp.features.movie.domain.source.MoviePopularRemoteDataSource
 import kotlinx.coroutines.flow.Flow
 
 class MoviePopularRepositoryImpl(

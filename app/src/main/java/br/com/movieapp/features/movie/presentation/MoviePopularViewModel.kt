@@ -6,8 +6,8 @@ import androidx.compose.runtime.getValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import br.com.movieapp.features.domain.usecase.GetPopularMoviesUseCase
-import br.com.movieapp.features.presentation.state.MoviePopularState
+import br.com.movieapp.features.movie.domain.usecase.GetPopularMoviesUseCase
+import br.com.movieapp.features.movie.presentation.state.MoviePopularState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
