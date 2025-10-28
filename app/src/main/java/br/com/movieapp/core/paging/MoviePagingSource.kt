@@ -1,4 +1,4 @@
-package br.com.movieapp.core.page
+package br.com.movieapp.core.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState

@@ -1,11 +1,10 @@
 package br.com.movieapp.core.domain.model
 
-import br.com.movieapp.core.data.remote.model.Genre
 
 data class MovieDetails(
     val id: Int,
     val title: String,
-    val genres: List<Genre>,
+    val genres: List<String>,
     val overview: String?,
     val backdropPathUrl: String?,
     val releaseDate: String?,

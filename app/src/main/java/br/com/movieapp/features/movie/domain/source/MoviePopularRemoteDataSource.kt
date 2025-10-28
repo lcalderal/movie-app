@@ -1,7 +1,7 @@
 package br.com.movieapp.features.movie.domain.source
 
 import br.com.movieapp.core.data.remote.response.MovieResponse
-import br.com.movieapp.core.page.MoviePagingSource
+import br.com.movieapp.core.paging.MoviePagingSource
 
 interface MoviePopularRemoteDataSource {
 

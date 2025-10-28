@@ -2,7 +2,7 @@ package br.com.movieapp.features.search.data.source
 
 import br.com.movieapp.core.data.remote.response.SearchResponse
 import br.com.movieapp.core.data.remote.service.MovieService
-import br.com.movieapp.core.page.MovieSearchPagingSource
+import br.com.movieapp.core.paging.MovieSearchPagingSource
 import br.com.movieapp.features.search.domain.source.MovieSearchRemoteDataSource
 import javax.inject.Inject
 
